@@ -1,0 +1,10 @@
+<resources>
+    <string name="app_name">PsyBOT</string>
+    <string name="hello">Hai!</string>
+    <string name="send">Send</string>
+    <string name="helloworld">HelloWorld</string>
+    <string name="welcome_message">
+        PsyBOT adalah chatbot untuk membantu kamu yang merasa sedang
+        masalah kesehatan psikologis.</string>
+    <string name="hint">Ketik mulai untuk menggunakan chatbot.</string>
+</resources>
