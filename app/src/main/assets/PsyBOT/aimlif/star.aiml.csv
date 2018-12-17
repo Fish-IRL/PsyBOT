@@ -1,1 +1,2 @@
-0,namaku *,*,*,hai <star/>.,star.aiml
+0,I LIKE *,*,*,I too like <star/>,star.aiml
+0,A * IS A *, *, *,How can a <star index="1"/> is not a <star index="2"/>,star.aiml
