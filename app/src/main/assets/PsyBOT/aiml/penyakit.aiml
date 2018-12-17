@@ -1,0 +1,24 @@
+<?xml version = "1.0" encoding = "UTF-8"?>
+<aiml>
+    <category>
+        <pattern>Apa itu stress</pattern>
+        <template>
+            Stres adalah
+        </template>
+    </category>
+
+    <category>
+        <pattern>Apa itu PTSD</pattern>
+        <template>
+            PTSD adalah
+        </template>
+    </category>
+
+    <category>
+        <pattern>Apa itu *</pattern>
+        <template>
+            <srai> Apa itu <star/></srai>
+        </template>
+    </category>
+
+</aiml>
