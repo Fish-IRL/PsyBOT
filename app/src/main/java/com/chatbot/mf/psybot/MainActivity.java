@@ -85,7 +85,8 @@ public class MainActivity extends AppCompatActivity {
     private void handleFileStream(){
         //receiving the assets from the app directory
         AssetManager assets = getResources().getAssets();
-        File jayDir = new File(getCacheDir().toString() + "/chatbot/bots/PsyBOT");
+        File jayDir = new File(getCacheDir().toString() + "/psybot/bots/PsyBOT");
+//        File jayDir = new File(getCacheDir().toString() + "/chatbot/bots/PsyBOT");
         boolean b = jayDir.mkdirs(); //create dir to be copied to cache dir
         if (jayDir.exists()) {
             //Reading the file
@@ -93,6 +94,7 @@ public class MainActivity extends AppCompatActivity {
                 for (String dir : assets.list("PsyBOT")) {
                     File subdir = new File(jayDir.getPath() + "/" + dir);
                     boolean subdir_check = subdir.mkdirs();
+                    System.out.println("Output : " + subdir_check);
                     for (String file : assets.list("PsyBOT/" + dir)) {
                         File f = new File(jayDir.getPath() + "/" + dir + "/" + file);
                         if (f.exists()) {
