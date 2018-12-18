@@ -1,0 +1,54 @@
+<?xml version = "1.0" encoding = "UTF-8"?>
+<aiml>
+    <category>
+        <pattern>mulai</pattern>
+        <template>Apa saja keluhan kamu?</template>
+    </category>
+
+    <category>
+        <pattern>Saya merasa kurang semangat</pattern>
+        <template>
+            Ada lagi? <think><set name="kurangSemangat">1</set></think>
+        </template>
+    </category>
+
+    <category>
+        <pattern>Saya sering merasa putus asa</pattern>
+        <template>
+            Ada lagi? <think><set name="putusAsa">1</set></think>
+        </template>
+    </category>
+
+    <category>
+        <pattern>Terkadang terbesit keinginan untuk bunuh diri</pattern>
+        <template>
+            Ada lagi? <think><set name="suicidal">1</set></think>
+        </template>
+    </category>
+
+    <category>
+        <pattern>Saya pernah mengalami trauma</pattern>
+        <template>
+            <think><set name="trauma">1</set></think><srai>hasil</srai>
+        </template>
+    </category>
+
+    <category>
+        <pattern>hasil</pattern>
+        <template>
+            <condition name="kurangSemangat" value="1">
+                <condition name="putusAsa" value="1">
+                    <condition name="suicidal" value="1">
+                        Sepertinya kamu sedang mengalami depresi, sebaiknya kamu segera konsultasi dengan psikiater.
+                    </condition>
+                    <condition name="suicidal" value="0">
+                        Sepertinya kamu sedang stress, sebaiknya kamu istirahat dan mencari udara segar.
+                    </condition>
+                </condition>
+            </condition>
+            <condition name="trauma" value = "0">
+                Sepertinya kamu sedang mengalami PTSD, disarankan untuk segera konsultasi dengan psikiater terdekat
+            </condition>
+        </template>
+    </category>
+</aiml>
