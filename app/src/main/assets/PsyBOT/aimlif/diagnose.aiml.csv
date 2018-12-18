@@ -1,0 +1,6 @@
+0,mulai,*,*,Apa saja keluhan kamu?,diagnose.aiml
+0,Saya merasa kurang semangat,*,*,Ada lagi? <think><set name="kurangSemangat">1</set></think>,diagnose.aiml
+0,Saya sering merasa putus asa,*,*,Ada lagi? <think><set name="putusAsa">1</set></think>,diagnose.aiml
+0,Terkadang terbesit keinginan untuk bunuh diri,*,*,Ada lagi? <think><set name="suicidal">1</set></think>,diagnose.aiml
+0,Saya pernah mengalami trauma,*,*,<think><set name="trauma">1</set></think><srai>hasil</srai>,diagnose.aiml
+0,hasil,*,*,<condition name="kurangSemangat" value="1"><condition name="putusAsa" value="1"><condition name="suicidal" value="1">Sepertinya kamu sedang mengalami depresi. Sebaiknya kamu segera konsultasi dengan psikiater.</condition><condition name="suicidal" value="0">Sepertinya kamu sedang stress. Sebaiknya kamu istirahat dan mencari udara segar.</condition></condition></condition><condition name="trauma" value = "0">Sepertinya kamu sedang mengalami PTSD. Disarankan untuk segera konsultasi dengan psikiater terdekat</condition>,condition.aiml
