@@ -3,21 +3,21 @@
     <category>
         <pattern>Apa itu stress</pattern>
         <template>
-            Stres adalah
+            Stress adalah sebuah tekanan psikologis dan fisik  yang bereaksi ketika menghadapi situasi yang dianggap berbahaya.
         </template>
     </category>
 
     <category>
         <pattern>Apa itu PTSD</pattern>
         <template>
-            PTSD adalah
+            PTSD adalah kondisi mental di mana kamu mengalami serangan panik yang dipicu oleh trauma pengalaman masa lalu.
         </template>
     </category>
 
     <category>
-        <pattern>Apa itu *</pattern>
+        <pattern>Apa itu depresi</pattern>
         <template>
-            <srai> Apa itu <star/></srai>
+            Depresi atau dalam istilah medis disebut gangguan depresi mayor adalah gangguan suasana hati (mood) yang dapat memengaruhi pola pikir, perasaan, dan cara menghadapi aktivitas sehari-hari.
         </template>
     </category>
 
