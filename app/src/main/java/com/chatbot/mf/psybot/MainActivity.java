@@ -51,7 +51,7 @@ public class MainActivity extends AppCompatActivity {
 
         mimicOtherMessage(getString(R.string.hello));
         mimicOtherMessage(getString(R.string.welcome_message));
-        mimicOtherMessage(getString(R.string.hint));
+        mimicOtherMessage(getString(R.string.help));
     }
 
     private void wireView(){
