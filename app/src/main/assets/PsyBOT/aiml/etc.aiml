@@ -10,6 +10,14 @@
         <pattern>*</pattern>
         <template>
             Perintah tidak ditemukan
+        </template>
+    </category>
+    <category>
+        <pattern>help</pattern>
+        <template>
+            [HELP] 1. Ketik "Apa itu [nama penyakit] ; 2. Mulai (untuk mulai diagnosis) ; 3. Credit (untuk melihat credit)
+        </template>
+
     </category>
 
 </aiml>
