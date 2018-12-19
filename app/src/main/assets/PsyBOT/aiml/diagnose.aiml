@@ -2,7 +2,13 @@
 <aiml>
     <category>
         <pattern>mulai</pattern>
-        <template>Apa saja keluhan kamu?</template>
+        <template>
+            Apa saja keluhan kamu?
+            <think><set name="kurangSemangat">0</set></think>
+            <think><set name="putusAsa">0</set></think>
+            <think><set name="suicidal">0</set></think>
+            <think><set name="trauma">0</set></think>
+        </template>
     </category>
 
     <category>
@@ -39,16 +45,21 @@
             <condition name="kurangSemangat" value="1">
                 <condition name="putusAsa" value="1">
                     <condition name="suicidal" value="1">
-                        Sepertinya kamu sedang mengalami depresi, sebaiknya kamu segera konsultasi dengan psikiater.
+                        Sepertinya kamu sedang mengalami depresi. Sebaiknya kamu segera konsultasi dengan psikiater.
                     </condition>
                     <condition name="suicidal" value="0">
-                        Sepertinya kamu sedang stress, sebaiknya kamu istirahat dan mencari udara segar.
+                        Sepertinya kamu sedang stress. Sebaiknya kamu istirahat dan mencari udara segar.
+                    </condition>
+                    <condition name="trauma" value = "1">
+                        Sepertinya kamu sedang mengalami PTSD. Disarankan untuk segera konsultasi dengan psikiater terdekat
                     </condition>
                 </condition>
             </condition>
-            <condition name="trauma" value = "0">
-                Sepertinya kamu sedang mengalami PTSD, disarankan untuk segera konsultasi dengan psikiater terdekat
-            </condition>
         </template>
+    </category>
+
+    <category>
+        <pattern>tidak</pattern>
+        <template><srai>hasil</srai></template>
     </category>
 </aiml>
