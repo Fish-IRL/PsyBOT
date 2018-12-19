@@ -6,5 +6,7 @@
     <string name="welcome_message">
         PsyBOT adalah chatbot untuk membantu kamu yang merasa sedang
         masalah kesehatan psikologis.</string>
-    <string name="hint">Ketik mulai untuk menggunakan chatbot.</string>
+    <string name="help">
+        Ketik help untuk bantuan
+    </string>
 </resources>
